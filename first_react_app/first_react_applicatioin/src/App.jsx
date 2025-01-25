@@ -1,19 +1,12 @@
-import"./App.css";
-import ReactLogo from"./assets/react.svg";
-export default function MyApp(){
+import { Outlet } from "react-router-dom"
+import NavBar from "./component/Navbar"
+export default function App(){
   return(
-    <div><div className="App">
-      <h2>Sorry, React is not working, Something went wrong!..</h2>
-      <img src={ReactLogo}/>
-    </div>
-    </div>
-  )
-}
-export function DisplayName(){
-  return(
-    <div>
-      <h1>My Name: </h1>
-      <p>Mr. Ghanshyam KC</p>
-    </div>
+    <>
+        <NavBar/>
+       <Outlet/>
+       {/* set your footer here */}
+       <h1>Footer from</h1>
+    </>
   )
 }

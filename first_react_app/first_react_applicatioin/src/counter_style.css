@@ -1,0 +1,67 @@
+.mainTitle{
+    color:red;
+    font-size: 40px;
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+/* child selector*/
+#counter>h1{
+    color:blueviolet;
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* descendent selector*/
+#counter p{
+    color:green;
+    font-size:16px;
+    text-align:center;
+    font-weight:bold;
+}
+#counter span{
+    font-size:80px;
+    font-weight:bolder;
+    margin: 10px;
+    color:blue;
+}
+#btn{
+    display:flex;
+    justify-content: center;
+}
+#btn button{
+    background-color:aqua;
+    color:black;
+    border: none;
+    border-radius:10px;
+    padding: 20px 30px;
+    font-size:20px;
+}
+#btn :hover{
+    background-color:blue;
+    color:white;
+    transform: scale(1.1);
+    box-shadow:0 5px 15px rgba(0, 0, 0,0.2);
+}
+#btn :active {
+    transform: scale(0.95); /* Shrink slightly */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Reduce shadow */
+    background-color: #003d80; /* Even darker blue */
+  }
+  #input {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove the default outline */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  #input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50vh;
+    margin-top: 50px;
+  }

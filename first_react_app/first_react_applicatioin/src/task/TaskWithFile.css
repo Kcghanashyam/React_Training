@@ -1,0 +1,11 @@
+.task-field{
+    padding: 10px 20px;
+    background-color: bisque;
+    border-radius: 5px;
+    margin: 10px;
+    /* box-shadow: x-offset y-offset blur-radius spread-radius color;*/
+    box-shadow:4px 4px 5px 0px rgba(169,90,5,0.554);
+}
+.task-field input{
+    margin-left:20px;
+}
